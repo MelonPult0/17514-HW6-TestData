@@ -20,7 +20,7 @@ function HighLight() {
     //Create the geocode request.
     var geocodeRequest = {
         where: document.getElementById('highlightTbx').value,
-        callback: getBoundary,
+        callback: getBoundary1,
         errorCallback: function (e) {
             //If there is an error, alert the user about it.
             alert("No results found.");
@@ -31,7 +31,7 @@ function HighLight() {
     searchManager1.geocode(geocodeRequest);
 }
 
-function getBoundary(geocodeResult){
+function getBoundary1(geocodeResult){
     //Add the first result to the map and zoom into it.
     if (geocodeResult && geocodeResult.results && geocodeResult.results.length > 0) {
         //Zoom into the location.
