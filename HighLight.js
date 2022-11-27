@@ -2,7 +2,7 @@ var map, searchManager;
 
 function GetMap() {
     map = new Microsoft.Maps.Map('#highlightMap', {
-        credentials: "Amevafl9kj5XfKKsSvdfMzcEkeFwQljbDeOvzTX7R5sCqUBB8cpHjjEUPQQDtENJ"
+        credentials: "ArFLUOUeMeUPD1ulz1rsGKvWAGuFMZwfl_rV76KumMXyPuY4thtuKrUYFI1F43f2"
     });
     map = map;
 
