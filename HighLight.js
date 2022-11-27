@@ -1,6 +1,6 @@
 var map, searchManager;
 
-function GetMap() {
+function GetMap1() {
     map = new Microsoft.Maps.Map('#highlightMap', {
         credentials: "ArFLUOUeMeUPD1ulz1rsGKvWAGuFMZwfl_rV76KumMXyPuY4thtuKrUYFI1F43f2"
     });
