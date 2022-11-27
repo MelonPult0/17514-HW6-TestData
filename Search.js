@@ -1,7 +1,7 @@
 var map, searchManager;
 
 function GetMap() {
-    map = new Microsoft.Maps.Map('#myMap', {
+    map = new Microsoft.Maps.Map('#searchMap', {
         credentials: "Amevafl9kj5XfKKsSvdfMzcEkeFwQljbDeOvzTX7R5sCqUBB8cpHjjEUPQQDtENJ"
     });
     map = map;
@@ -19,7 +19,7 @@ function Search() {
 
     //Create the geocode request.
     var geocodeRequest = {
-        where: document.getElementById('inputTbx').value,
+        where: document.getElementById('searchTbx').value,
         callback: getBoundary,
         errorCallback: function (e) {
             //If there is an error, alert the user about it.
