@@ -1,10 +1,10 @@
-var map, searchManager;
+var map1, searchManager;
 
 function GetMap1() {
-    map = new Microsoft.Maps.Map('#highlightMap', {
+    map1 = new Microsoft.Maps.Map('#highlightMap', {
         credentials: "ArFLUOUeMeUPD1ulz1rsGKvWAGuFMZwfl_rV76KumMXyPuY4thtuKrUYFI1F43f2"
     });
-    map = map;
+    map1 = map1;
 
     //Load the Bing Spatial Data Services and Search modules, then create an instance of the search manager.
     Microsoft.Maps.loadModule(['Microsoft.Maps.SpatialDataService',
@@ -15,7 +15,7 @@ function GetMap1() {
 
 function HighLight() {
     //Remove all data from the map.
-    map.entities.clear();
+    map1.entities.clear();
 
     //Create the geocode request.
     var geocodeRequest = {
@@ -35,7 +35,7 @@ function getBoundary(geocodeResult){
     //Add the first result to the map and zoom into it.
     if (geocodeResult && geocodeResult.results && geocodeResult.results.length > 0) {
         //Zoom into the location.
-        map.setView({ bounds: geocodeResult.results[0].bestView });
+        map1.setView({ bounds: geocodeResult.results[0].bestView });
 
         //Create the request options for the GeoData API.
         var geoDataRequestOptions = {
