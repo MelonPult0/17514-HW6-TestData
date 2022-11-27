@@ -13,7 +13,7 @@ function GetMap() {
         });
 }
 
-function Search() {
+function HighLight() {
     //Remove all data from the map.
     map.entities.clear();
 
