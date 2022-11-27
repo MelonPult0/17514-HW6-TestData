@@ -1,4 +1,4 @@
-var map1, searchManager;
+var map1, searchManager1;
 
 function GetMap1() {
     map1 = new Microsoft.Maps.Map('#highlightMap', {
@@ -9,7 +9,7 @@ function GetMap1() {
     //Load the Bing Spatial Data Services and Search modules, then create an instance of the search manager.
     Microsoft.Maps.loadModule(['Microsoft.Maps.SpatialDataService',
         'Microsoft.Maps.Search'], function () {
-            searchManager = new Microsoft.Maps.Search.SearchManager(map);
+            searchManager1 = new Microsoft.Maps.Search.SearchManager(map1);
         });
 }
 
@@ -28,7 +28,7 @@ function HighLight() {
     };
 
     //Make the geocode request.
-    searchManager.geocode(geocodeRequest);
+    searchManager1.geocode(geocodeRequest);
 }
 
 function getBoundary(geocodeResult){
