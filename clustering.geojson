@@ -1,0 +1,39 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "average_temperature": 60,
+            "time": 1669437247755
+        },
+        "geometry":{"type":"Point","coordinates":[-80.102951,40.400600],"id":"0"}
+    },{
+        "type": "Feature",
+        "properties": {
+            "average_temperature": 85,
+            "time": 1669437247755
+        },
+        "geometry":{"type":"Point","coordinates":[-80.191788,25.761681],"id":"1"}
+    },{
+        "type": "Feature",
+        "properties": {
+            "average_temperature": 50,
+            "time": 1669437247755
+        },
+        "geometry":{"type":"Point","coordinates":[-87.629799,41.878113],"id":"2"}
+    },{
+        "type": "Feature",
+        "properties": {
+            "average_temperature": 55,
+            "time": 1669437247755
+        },
+        "geometry":{"type":"Point","coordinates":[-73.935242,40.730610],"id":"3"}
+    },{
+        "type": "Feature",
+        "properties": {
+            "average_temperature": 80,
+            "time": 1669437247755
+        },
+        "geometry":{"type":"Point","coordinates":[-97.715942,30.269501],"id":"4"}
+    }]
+ }
