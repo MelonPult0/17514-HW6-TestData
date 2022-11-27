@@ -59,7 +59,7 @@ function getBoundary(geocodeResult){
             default:
                 //Display a pushpin if GeoData API does not support EntityType.
                 var pin = new Microsoft.Maps.Pushpin(geocodeResult.results[0].location);
-                map.entities.push(pin);
+                map1.entities.push(pin);
                 return;
         }
 
@@ -67,15 +67,15 @@ function getBoundary(geocodeResult){
         Microsoft.Maps.SpatialDataService.GeoDataAPIManager.getBoundary(
             geocodeResult.results[0].location,
             geoDataRequestOptions,
-            map,
+            map1,
             function (data) {
                 //Add the polygons to the map.
                 if (data.results && data.results.length > 0) {
-                    map.entities.push(data.results[0].Polygons);
+                    map1.entities.push(data.results[0].Polygons);
                 } else {
                     //Display a pushpin if a boundary isn't found.
                     var pin = new Microsoft.Maps.Pushpin(data.location);
-                    map.entities.push(pin);
+                    map1.entities.push(pin);
                 }
             });
     }
