@@ -1,5 +1,3 @@
-import React from 'react';
-
 let tmpLocation = "";
 let tmpStartTime = "";
 let tmpEndTime = "";
@@ -16,7 +14,9 @@ class App extends React.Component {
       end_time: ''
     };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleLocationChange = this.handleLocationChange.bind(this);
+    this.handleStartTimeChange = this.handleStartTimeChange.bind(this);
+    this.handleEndTimeChange = this.handleEndTimeChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -63,6 +63,5 @@ class App extends React.Component {
   }
 }
 
-const domContainer = document.querySelector('#like_button_container');
-const root = ReactDOM.createRoot(domContainer);
-root.render(e(LikeButton));
+const root = ReactDOM.createRoot(document.getElementById('input'));
+root.render(<App />);
